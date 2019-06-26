@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+	<head>
+		<meta charset = "utf-8"/>
+		<title>Cadastro</title>
+		<link rel="stylesheet" type="text/css" href="../_config/_css/style.css">
+		<link rel="stylesheet" type="text/css" href="../_config/_css/s.css">
+		<script src="../_config/_js/jquery.min-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav></nav>
+		</header>
+
+		<section>
+			<br>
+			<div id="load"></div>
+			<form id = "cadastro" action="../_control/CadastroController.php" method="POST">
+			  	<div id="coluna1">
+				  Nome Completo:<br>
+				  <input type="text" id="nome" name="nome" placeholder="Nome Completo" />
+				  
+				  <br><br>
+
+				  RG:<br>
+				  <input type="text" id="rg" name="rg" placeholder="00.000.000-0"/>
+				  <br><br>
+
+				  Pai:<br>
+				  <input type="text" id="nomePai" name="nomePai" placeholder="Nome do Pai" />
+
+				  <br><br>
+
+				  Escolaridade:<br>
+				  <select id="escolaridade" name="escolaridade">
+				  	<option selected disabled value=" ">Selecione uma opção</option>
+				    <option value="ensinoMedioComp">Ensino Médio Completo</option>
+				    <option value="ensinoMedioInc">Ensino Médio Incompleto</option>
+				    <option value="ensinoSupCursando">Ensino Superior Cursando</option>
+				    <option value="ensinoSupInc">Ensino Superior Incompleto</option>
+				    <option value="ensinoSupComp">Ensino Superior Completo</option>
+				  </select>
+
+				  <br><br>
+
+				  Telefone:<br>
+				  <input type="text" name="telefone" id="telefone" placeholder="(00) 0000-0000" />
+
+				  <br><br>
+				  
+				  E-mail:<br>
+				  <input type="email" id="email" name="email" placeholder="exemplo@email.com" />
+
+				  <br><br>
+				</div>
+
+				<div id = "coluna2">
+					<br>
+					Data de Nascimento:<br>
+					<input type="text" id="nascimento" name="nascimento" placeholder="__/__/____" />
+					
+					<br><br>
+
+					CPF:<br>
+					<input type="text" id="cpf" name="cpf" placeholder="000.000.000-0" />
+
+					<br><br>
+
+					Mãe:<br>
+					<input type="text" id="nomeMae" name="nomeMae" placeholder="Nome da Mãe" />
+
+					<br><br>
+
+					Profissão:<br>
+					<input type="text" id="profissao" name="profissao" placeholder="Profissão" />
+
+					<br><br>
+
+					Celular:<br>
+					<input type="text" id="celular" name="celular" placeholder="(00) 0000-0000" />
+
+					<br>
+					<br>
+					<br>
+					<button id = "btnCadastro" type="submit">Cadastrar</button>
+				  	<button id = "btnLimparCampos" type="button" value="Limpar" onclick="limparCamposCadastro()">Limpar Campos</button>
+				</div>
+			</form> 
+			<script type="text/javascript" src="../_config/_js/script.js"></script>	 
+		</section>
+	</body>
+
+</html>
