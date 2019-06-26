@@ -1,0 +1,6 @@
+#nome, #rg, #nomePai, #escolaridade, #telefone, #email, #nascimento, #cpf, #nomeMae, #profissao, #celular{
+	padding: 20px 40px;
+	border: none;
+	border-radius: 2px;
+	background-color: rgb(173,216,230);
+}
