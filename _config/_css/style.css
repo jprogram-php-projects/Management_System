@@ -1,0 +1,105 @@
+body{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: rgb(245,245,245);
+}
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+	top:0px;
+	left:0px;
+    z-index:9999;
+    background:url("../_img/loader1.gif") no-repeat 50% 50% rgba(255,255,255,0.9);
+}
+
+section{
+	text-align: center;
+}
+
+header{
+	margin-top: 0px;
+	height: 50px;
+	background-color: #2E8B57;
+}
+
+#login, #senha{
+	padding: 20px 40px;
+	border: none;
+	border-radius: 4px;
+	background-color: rgb(143,188,143);
+	color: white;
+}
+
+#btnLogar, #btnLimpar{
+	width: 100px;
+	background-color: #2F4F4F;
+	color: white;
+	padding: 8px;
+	border: none;
+  	border-radius: 4px;
+}
+
+#btnLogar:hover{
+	background-color: rgb(32,178,170);
+
+}
+
+#btnLimpar:hover{
+	background-color: rgb(0,139,139);
+}
+
+a:link 
+{ 
+text-decoration:none; 
+color: blue;
+} 
+
+#btnCadastro, #btnLimparCampos{
+	background-color: #2F4F4F;
+	color: white;
+	padding: 17px;
+	border: none;
+  	border-radius: 17px;
+}
+
+#btnCadastro:hover{
+	background-color: rgb(32,178,170);
+
+}
+
+#btnLimparCampos:hover{
+	background-color: rgb(0,139,139);
+
+}
+
+#coluna1{
+	float: left;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 400px;;
+}
+
+#coluna2{
+    float: left;
+    width: 240px;
+    margin-top: -18px;
+}
+
+#logar {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    background-color: white;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 3px solid rgb(0,128,128);
+    border-radius: 1em;
+}
+
+input:focus{
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
