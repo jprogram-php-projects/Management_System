@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang = "pt-br">
+	<head>
+		<meta charset = "utf-8"/>
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="../_config/_css/style.css">
+		<link rel="stylesheet" type="text/css" href="../_config/_css/s.css">
+		<script src="../_config/_js/jquery.min-3.2.1.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav></nav>
+		</header>
+
+		<section>
+			<div id="load"></div>
+				<br/><br/><br/>
+				<img src="../_config/_img/lock.png">
+				<form  id = "logar" action="../_control/LoginController.php" method="POST">
+				  <div>
+				  	<input type="text" id="login" name = "login" placeholder="Login" /><br/>
+				  </div>
+				  <br>
+				  <div>
+				  	<input type="password" id="senha" name="senha" placeholder="Senha"/>
+				  </div>
+				  <br>
+				  <a href="form_cadastro.html">Quero criar uma conta</a>
+				  <br><br>
+				  <button id = "btnLogar" type="submit">Logar</button>
+				  <button id = "btnLimpar" type="button" value="Limpar" onclick="limparCamposLogin()">Limpar</button>
+				</form>
+				<script type="text/javascript" src="../_config/_js/script.js"></script>	 	 
+		</section>
+	</body>
+
+</html>
